@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+    <style>
+      html {
+        --color-primary: #3b013b;
+        --color-primary-inverse: white;
+        --color-primary-highlight: #750175;
+      }
+    </style>
+    <script type="module" src="/build/dog-api.esm.js"></script>
+    <script nomodule src="/build/dog-api.js"></script>
+  </head>
+  <body>
+    <uc-stock-price stock-symbol="AAPL"></uc-stock-price>
+    <uc-stock-finder></uc-stock-finder>
+  </body>
+</html>
+
+<!-- 
+    *Side Drawer Slot styling
+    <style>
+    body {
+      font-family: sans-serif;
+    }
+    .side-nav ul{
+        list-style: none;
+    }
+
+    .side-nav li {
+      margin: 1rem 0
+    }
+
+    .side-nav a{
+      text-decoration: none;
+      color: black
+    }
+  </style> -->
+<!--
+    *Side Drawer Component HTML (with tooltip component)
+    <button id="side-drawer-btn">Open Side Menu</button>
+  <p>Let's test this new <uc-tooltip text="Text set outside of the class!">Tooltip!</uc-tooltip></p>
+    <uc-side-drawer title="Main Menu">
+      <nav class="side-nav">
+        <ul>
+          <li><a href="/">A Link</a></li>
+          <li><a href="/">Another Link</a></li>
+          <li><a href="/">A third Link</a></li>
+        </ul>
+      </nav>
+    </uc-side-drawer> -->
+
+<!-- <script>
+      * Side Drawer Component *
+      const sideDrawerBtn = document.querySelector("#side-drawer-btn")
+      const sideDrawer = document.querySelector('uc-side-drawer')
+      sideDrawerBtn.addEventListener('click', () => {
+        if(!sideDrawer.opened){
+          sideDrawer.open()
+          
+        }
+      }) -->
+
+<!-- Programmtic EX
+        JS code and NOT TS code, therefore it will not be picked up by stencil. 
+
+        Works in exactly the same way it did with vanilla components because stencil spits out a vanilla web component, then we can also set the title here.
+        
+        <script>
+          const sideDrawer = document.querySelector('uc-side-drawer')
+  
+          setTimeout(() => {
+            sideDrawer.title = 'Title has been Changed'
+            // can also change the Attribute
+            sideDrawer.setAttribute('title', 'it changed via attribute')
+          }, 3000)
+        </script>  
+      </script>
+      -->
